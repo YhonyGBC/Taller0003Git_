@@ -104,3 +104,9 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
 });
+
+document.getElementById("convertir").addEventListener("click", function () {
+    var celsius = parseFloat(document.getElementById("tela").value);
+    var fahrenheit = (celsius * 9/5) + 32;
+    document.getElementById("tela").value = fahrenheit;
+});
